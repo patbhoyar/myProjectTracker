@@ -1,0 +1,46 @@
+
+CLIENTS
+                + Sort Clients by Recent Task deadline
+                        +[NEW] Push inactive clients to the bottom
+ 
+MAIN PROJECT VIEW
+                + [NEW] Sort by Project Status (Client Feedback Req, In-Progress, Completed, Archived), then by Project Name
+ 
+SINGLE PROJECT VIEW
+                + [UPDATED] On click of Project, should also list "In-Progress, and Approval Needed" tasks. Use "Pending Tasks" as label. If there are none, should show "No Pending Tasks"
+ 
+TASKS
+                + [UPDATED] Chunk by Project (Show Project labels), Sort by Project Status, similar to Project View (Check Wireframe)
+                + Sort projects by Priority, then by Deadline, then by Name
+ 
+ADD A TASK
+                + [TO BE CHECKED] All tasks should have Task Approval = No by default; unless the Task was created by a regular user, where Task Approval = Yes
+                                + "Task Approval" means Is Task Approval Needed?
+ 
+LOG HOURS
+                + [NEW] Add a Task button should allow regular users (and admin) to add tasks
+                        + NOTE: If Regular users add tasks, set Task Approval = Yes (by default, cannot be changed)
+ 
+ALSO IMPORTANT: Do you want me to comment on deletion of tasks, projects, etc now, or do you want me to hold off? Let me know.
+ 
+ALSO: REMOVE Actual Completion Date (this should only appear on Edit; And can only be Editted by non-admins once they mark the task as Completed)
+ 
+        PAT: This should be done by the admin, as a user could just say the task is completed, while there may still be bugs.
+ 
+        ROSS: Absolutely, however, I want this to be in the EDIT function for ADMINS only, not during project creation. (I can't mark something as complete when the project just has been created)
+ 
+
+ + Overview Page
+                + Dropdown for Clients
+                + Dropdown for Projects
+                + List of Tasks
+ 
++ Click on Client --> Sends to Overview Page
+                + Client Preselected
+ 
++ Log Hours
+                + Change Status Drop Down to Check Box for "Done"
+                                + Gets interpreted as Status attribute in DB
+                                + Users CANNOT select Assigned/InProgress/Archived
+                                                + Only Admin sees all Statuses
+                + Save old version of Log Hours

@@ -1,0 +1,83 @@
+.theClientId, .theClientName, .theClientStatus, .editClient, #clientProjectNameContainer, .theClientStatusIcon{
+	float: left;
+}
+
+#clientList{ 
+	width: 600px; 
+	margin: auto;
+}
+
+.editClient{
+	background: #ddd;
+	padding: 5px;
+	border: 1px solid #aaa;
+	cursor: pointer;
+	display: none;
+}
+
+#editClients, #saveEditedClients, #cancelEditClients{ margin-left: 10px; }
+
+#saveEditedClients, #cancelEditClients{ display: none; }
+
+.clientHeading, #clientsProjectListHeading{ font-weight: bold; }
+
+.clientRow, #clientHeading, .myProjects, #clientsProjectListHeading{  
+	clear: both;
+	width: 600px;
+	height: 35px;
+	line-height: 36px;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.clientRow:hover{ background: #b5b5b5; opacity: 0.6; }
+
+.theClientId{
+	width: 10px;
+	display: none;
+}
+
+.theClientStatusIcon {
+	width: 19px;
+	height: 20px;
+	margin: 8px 7px 0 0;
+}
+
+.iconGreen{
+	background: url('../images/sprite.png') no-repeat -296px -298px;
+}
+
+.iconRed{
+	background: url('../images/sprite.png') no-repeat -296px -331px;
+}
+
+.theClientName{
+	width: 460px;
+	font-weight: bold;
+}
+
+.theClientStatus{
+	width: 90px;
+	font-size: 14px;
+	text-align: right;
+}
+
+#clientsProjectList{
+	float: right;
+	width: 450px;
+}
+
+.myProjects, #clientsProjectListHeading{ padding-left: 10px; }
+
+.addProjectForClient{
+	line-height: 15px;
+	height: 15px;
+	float: right;
+	margin: 4px 4px;
+}
+
+#clientProjectNameContainer{
+	width: 276px;
+	overflow: hidden;
+	height: 30px;
+}

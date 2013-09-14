@@ -1,0 +1,49 @@
+#taskListContainer, .taskItem, .dateOption, #dateIcon, #today{
+	float: left;
+}
+
+#saveLog, #addLog, #nextDate{
+	float: right;
+}
+
+#prevDate, #dateIcon, #nextDate{ cursor: pointer; }
+
+#currentDate 	{ width: 150px; }
+#prevDate 		{ width: 430px; }
+#today 			{ margin-left: 10px; }
+#datepicker 	{
+					visibility: hidden;
+					width: 0px;
+				}
+
+#saveLog 		{ margin-left: 10px; }
+
+.taskStatus 	{ width: 100px; }
+.taskPriority 	{ width: 80px; }
+.taskName 		{ width: 300px; }
+.taskHours 		{ width: 60px; }
+.inputTaskHours { width: 40px; }
+.taskNotes 		{ 
+					width: 400px; 
+					border-right: 1px solid #bbb;
+				}
+.inputTaskNotes{ width: 390px; }
+
+#taskHeading div{
+	font-weight: bold;
+	border-top: 1px solid #bbb;
+}
+
+.taskRow{
+	width: 1000px;
+	clear: both;
+}
+
+.taskItem{
+	border-left: 1px solid #bbb;
+	border-bottom: 1px solid #bbb;
+	padding: 0 5px;
+	height: 30px;
+	line-height: 30px;
+}
+

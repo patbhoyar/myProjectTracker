@@ -1,0 +1,19 @@
+.editProject{
+	float: left;
+	background: #ddd;
+	padding: 5px;
+	border: 1px solid #aaa;
+	cursor: pointer;
+	display: none;
+}
+
+#projectNotesContainer>.itemData{
+	width: 700px;
+	overflow: hidden;
+}
+
+#editProject, #saveChanges{
+	float: right;
+}
+
+#projectEndDateContainer{ display: none; }

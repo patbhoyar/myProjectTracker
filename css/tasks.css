@@ -1,0 +1,44 @@
+.row, #header, .taskStatus, .taskPriority, .taskDeadline, .taskName, .taskNotes{
+	float: left;
+}
+
+#header, .row{
+	width: 1000px;
+	height: 31px;
+	line-height: 30px;
+	font-size: 18px;
+}
+
+#header div{
+	text-align: center;
+	font-weight: bold;
+}
+
+#header div, .row div{
+	border-right: 1px solid #bbb;
+	border-bottom: 1px solid #bbb;
+	overflow: hidden;
+	padding: 0 5px;
+	height: 30px;
+}
+
+#header{ border-top: 1px solid #bbb; }
+#header div:first-child,.row div:first-child{ border-left: 1px solid #bbb; }
+
+.row:nth-child(even){ background: #eee; }
+
+.taskStatus 	{ width: 100px; }
+.taskPriority 	{ width: 80px; }
+.taskDeadline 	{ width: 100px; }
+.taskName 		{ width: 330px; }
+.taskNotes 		{ width: 334px; }
+
+.emptyNotes{ 
+	font-style: italic;
+	color: #999;
+}
+
+.row:hover{ background: #ddd; } 
+.row{ cursor: pointer; }
+
+#addTask{ clear: both; } 

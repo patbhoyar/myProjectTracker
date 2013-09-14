@@ -1,0 +1,66 @@
+XX-- User
+	- id
+	- email
+	- password
+	- Name
+FK	- userType 
+
+XX-- UserType
+	- id 
+	- userType -> Admin/User
+
+XX-- Tasks
+	- id 
+FK	- projectId
+	- taskName
+FK	- taskType
+FK	- taskAssignee
+	- taskCompletionDate
+	- taskDeadline
+	- taskEstimatedHours
+FK	- taskPriority 
+	- taskNotes
+FK	- taskStatus
+	- taskApproval -> 1/0
+
+XX-- TaskStatus
+	- id 
+	- statusName -> Assigned/In Progress/Completed/Archived
+
+XX-- ProjectStatus
+	- id 
+	- statusName -> Client Feedback Needed/In Progress/Completed/Archived
+
+XX-- Priorities
+	- id
+	- priorityName -> High/Medium/Low
+
+XX-- Client
+	- id
+	- clientName
+
+XX-- Projects
+	- id
+	- projectName
+FK	- projectType
+FK	- clientId
+	- projectStartDate
+	- projectEndDate
+	- projectEstimatedHours
+FK	- projectStatus
+	- projectBudget
+	- projectNotes
+
+XX-- ProjectType
+	- id
+	- projectType -> Web/Design/Cards/Maintainance
+
+XX-- ProjectTask
+	- id
+	- projectTask -> Proposal/Consult/Wireframing
+FK	- projectType 
+
+XX-- TaskType
+	- id
+FK	- projectType
+	- taskType -> Proposal/Consult/Wireframing

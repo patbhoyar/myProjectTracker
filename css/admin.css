@@ -1,0 +1,8 @@
+#addProjectView, #addTaskView{
+	clear: both;
+	margin: 10px 0;
+}
+
+#addTaskView{ float: left; }
+
+#errorView{ padding: 20px 0; }

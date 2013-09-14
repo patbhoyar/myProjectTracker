@@ -1,0 +1,44 @@
+#addProject{  clear: both; }
+
+.projRowHeading div{
+	font-weight: bold;
+	text-align: center;
+}
+
+.projItem{
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 5px;
+	border-right: 1px solid #bbb;
+	border-bottom: 1px solid #bbb;
+	overflow: hidden;
+}
+
+.projRowHeading{ border-top: 1px solid #bbb; }
+.projItem:first-child{ border-left: 1px solid #bbb; }
+
+.projRow:nth-child(even){ background: #eee; }
+
+.projRow, .projRowHeading{
+	clear: both;
+}
+
+.projRow{
+	width: 1000px;
+	height: 30px;
+	cursor: pointer;
+}
+.projRow:hover{ background: #ddd; } 
+
+.projId 		{ width: 20px; }
+.projStatus 	{ width: 90px; }
+.projName 		{ width: 140px; }
+.projClient 	{ width: 140px; }
+.projType 		{ width: 60px; }
+.projBudget 	{ width: 60px; }
+.projStartDate 	{ width: 90px; }
+.projEndDate 	{ width: 90px; }
+.projEstHours 	{ width: 60px; }
+.projNotes 		{ width: 170px; }
+#noTasks 		{ display: none;}
